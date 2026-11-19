@@ -101,14 +101,14 @@ h2 em {
 }
 
 .brand-mark {
+    display: block;
     width: 36px;
     height: 36px;
     border: 1px solid var(--gold);
     border-radius: 50%;
     color: var(--wine);
-    display: grid;
-    place-items: center;
-    font: 20px var(--sans);
+    object-fit: cover;
+    object-position: center;
     transition: transform .7s cubic-bezier(.2, .75, .25, 1)
 }
 

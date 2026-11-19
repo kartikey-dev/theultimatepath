@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="The Ultimate Path home">
-          <span className="brand-mark" aria-hidden="true">✳</span>
+          <Image className="brand-mark" src="/the-ultimate-path-poster.jpg" alt="" width={96} height={96} priority />
           <span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span>
         </a>
         <nav aria-label="Main navigation"><a href="#about">About</a><a href="#readings">Readings</a><a href="#stories">Social stories</a></nav>
@@ -104,7 +104,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer><a className="brand footer-brand" href="#home"><span className="brand-mark" aria-hidden="true">✳</span><span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span></a><span className="footer-note">A moment for your path forward.</span><a className="back-top" href="#home">BACK TO TOP ↑</a></footer>
+      <footer><a className="brand footer-brand" href="#home"><Image className="brand-mark" src="/the-ultimate-path-poster.jpg" alt="" width={96} height={96} loading="lazy" /><span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span></a><span className="footer-note">A moment for your path forward.</span><a className="back-top" href="#home">BACK TO TOP ↑</a></footer>
     </>
   );
 }
