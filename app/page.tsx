@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
+import Image from "next/image";
 
 const instagramPosts = [
   { type: "reel", id: "DYWawFMvuto", label: "A recent tarot reel" },
@@ -92,7 +93,8 @@ export default function Home() {
 
         <section className="connect-section" id="connect">
           <div className="connect-orbit" aria-hidden="true"><span>✳</span></div>
-          <div className="connect-copy" data-reveal><Eyebrow>Your next step starts with a hello</Eyebrow><h2>Let’s find a time<br /><em>to talk.</em></h2><p>For tarot reading enquiries, connect with Archana on your preferred social platform.</p><a className="button button-light" href="https://jsdl.in/DT-99QRHHHBLIG" target="_blank" rel="noreferrer">View business listing <span>↗</span></a></div>
+          <div className="contact-poster" data-reveal><Image src="/the-ultimate-path-poster.jpg" alt="The Ultimate Path tarot reading poster featuring Archana Mahajan and her contact numbers" width={640} height={640} sizes="(max-width: 600px) 86vw, (max-width: 900px) 30vw, 25vw" /></div>
+          <div className="connect-copy" data-reveal><Eyebrow>Your next step starts with a hello</Eyebrow><h2>Let’s find a time<br /><em>to talk.</em></h2><p>For tarot reading enquiries, connect with Archana on your preferred social platform.</p><div className="phone-links" aria-label="Call Archana"><a href="tel:+919076977905"><span>Call</span> +91 90769 77905 <b>↗</b></a><a href="tel:+918052623615"><span>Call</span> +91 80526 23615 <b>↗</b></a></div><a className="button button-light" href="https://jsdl.in/DT-99QRHHHBLIG" target="_blank" rel="noreferrer">View business listing <span>↗</span></a></div>
           <div className="social-links" data-reveal>
             <a href="https://www.instagram.com/the_ultimate_path/" target="_blank" rel="noreferrer"><span className="social-icon">◎</span><span><b>Instagram</b><small>@the_ultimate_path</small></span><span className="social-arrow">↗</span></a>
             <a href="https://www.facebook.com/archana.mahajan.98/" target="_blank" rel="noreferrer"><span className="social-icon">f</span><span><b>Facebook</b><small>Archana Mahajan</small></span><span className="social-arrow">↗</span></a>

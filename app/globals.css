@@ -715,11 +715,35 @@ h1 {
     position: relative;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: .85fr 1fr 1fr;
+    gap: 42px;
     padding: 87px var(--gutter);
     background: var(--wine-dark);
     color: #f8f0e7
+}
+
+.contact-poster {
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    max-width: 340px;
+    padding: 9px;
+    border: 1px solid rgba(232, 207, 184, .45);
+    background: rgba(255, 255, 255, .08);
+    box-shadow: 0 20px 55px rgba(15, 8, 12, .25);
+    transform: rotate(-2deg);
+    transition: transform .45s cubic-bezier(.2,.75,.25,1), box-shadow .45s;
+}
+
+.contact-poster:hover {
+    transform: rotate(0deg) translateY(-4px);
+    box-shadow: 0 25px 65px rgba(15, 8, 12, .32);
+}
+
+.contact-poster img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .connect-copy,
@@ -750,6 +774,41 @@ h1 {
     color: #d0c0b9;
     font-size: 12px;
     line-height: 1.9
+}
+
+.phone-links {
+    display: grid;
+    gap: 8px;
+    margin: 18px 0 12px;
+}
+
+.phone-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    color: #f8f0e7;
+    font-size: 13px;
+    letter-spacing: .025em;
+    transition: color .2s, transform .2s;
+}
+
+.phone-links a:hover {
+    color: #e1b7a8;
+    transform: translateX(3px);
+}
+
+.phone-links a span {
+    color: #cdb39f;
+    font-size: 9px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.phone-links a b {
+    color: #cdb39f;
+    font-size: 11px;
+    font-weight: 400;
 }
 
 .button-light {
@@ -1024,7 +1083,11 @@ footer {
     }
 
     .connect-section {
-        gap: 44px
+        gap: 30px
+    }
+
+    .contact-poster {
+        max-width: 260px
     }
 }
 
@@ -1206,6 +1269,12 @@ footer {
         grid-template-columns: 1fr;
         gap: 38px;
         padding: 61px var(--gutter)
+    }
+
+    .contact-poster {
+        max-width: min(100%, 360px);
+        width: 100%;
+        margin: auto
     }
 
     .connect-copy h2 {
