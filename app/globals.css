@@ -1323,6 +1323,168 @@ footer {
     }
 }
 
+/* A connected tarot cosmos across the entire page */
+body {
+    background: #100d1c;
+    color: #f6efe8;
+}
+
+main {
+    position: relative;
+    isolation: isolate;
+    overflow: clip;
+    background:
+        radial-gradient(ellipse at 8% 27%, rgba(97, 61, 109, .2), transparent 34%),
+        radial-gradient(ellipse at 94% 57%, rgba(73, 53, 106, .22), transparent 33%),
+        linear-gradient(180deg, #171321, #151120 48%, #1b1421);
+}
+
+main::before,
+main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+main::before {
+    z-index: 0;
+    opacity: .56;
+    background-image:
+        radial-gradient(1px 1px at 12% 8%, rgba(255, 232, 190, .9) 50%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 78% 14%, rgba(239, 206, 221, .8) 50%, transparent 100%),
+        radial-gradient(1px 1px at 34% 31%, rgba(255, 243, 213, .72) 50%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 91% 43%, rgba(221, 194, 245, .72) 50%, transparent 100%),
+        radial-gradient(1px 1px at 64% 68%, rgba(250, 222, 191, .8) 50%, transparent 100%),
+        radial-gradient(1px 1px at 16% 83%, rgba(224, 199, 243, .75) 50%, transparent 100%);
+    background-size: 290px 260px, 390px 330px, 350px 300px, 440px 390px, 320px 280px, 410px 350px;
+    animation: cosmos-drift 90s linear infinite;
+}
+
+main::after {
+    z-index: 0;
+    opacity: .22;
+    background-image: radial-gradient(rgba(213, 190, 228, .35) .55px, transparent .65px);
+    background-size: 8px 8px;
+    mask-image: linear-gradient(180deg, transparent 0%, #000 12%, #000 86%, transparent 100%);
+}
+
+main > section {
+    position: relative;
+    z-index: 1;
+    color: #f6efe8;
+    border-top: 1px solid rgba(236, 211, 184, .08);
+}
+
+.hero {
+    border-top: 0;
+    background: radial-gradient(ellipse at 52% 48%, rgba(88, 58, 99, .16), transparent 60%);
+}
+
+.intro-section,
+.video-section {
+    background: linear-gradient(110deg, rgba(27, 22, 39, .91), rgba(24, 20, 37, .86));
+}
+
+.reading-section,
+.social-gallery {
+    background: linear-gradient(112deg, rgba(34, 25, 42, .91), rgba(25, 21, 39, .9));
+}
+
+.intro-grid h2 em,
+.reading-lead h2 em,
+.video-heading h2 em,
+.gallery-heading h2 em {
+    background: linear-gradient(105deg, #f1d49f, #e6b5c2 55%, #c8b2e7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.section-label,
+.eyebrow {
+    color: #e4c89f;
+}
+
+.section-label span {
+    color: #a99caf;
+}
+
+.intro-text,
+.reading-lead p,
+.reading-list p,
+.video-intro,
+.gallery-intro {
+    color: #c3b9c9;
+}
+
+.reading-section {
+    box-shadow: inset 0 1px rgba(248, 225, 191, .05), inset 0 -1px rgba(248, 225, 191, .05);
+}
+
+.reading-list article {
+    border-bottom-color: rgba(229, 207, 190, .18);
+}
+
+.reading-list h3,
+.video-card figcaption {
+    color: #f4e8dc;
+}
+
+.reading-number,
+.reading-icon {
+    color: #e5c28f;
+}
+
+.gentle-note {
+    color: #b5a9bb;
+}
+
+.video-frame {
+    border: 1px solid rgba(226, 198, 158, .3);
+    background: #211a2c;
+    box-shadow: 0 12px 35px rgba(5, 4, 12, .2);
+}
+
+.instagram-card {
+    border: 1px solid rgba(226, 198, 158, .25);
+    background: #211a2c;
+    box-shadow: 0 16px 40px rgba(5, 4, 12, .2);
+}
+
+.instagram-card iframe {
+    background: #211a2c;
+}
+
+.connect-section {
+    border-top: 1px solid rgba(238, 210, 180, .14);
+    background:
+        radial-gradient(ellipse at 83% 15%, rgba(102, 65, 107, .28), transparent 38%),
+        linear-gradient(118deg, #241a2e, #181322 76%);
+}
+
+footer {
+    color: #eee3d9;
+    background: #110e1b;
+    border-top: 1px solid rgba(238, 210, 180, .12);
+}
+
+.footer-note {
+    color: #b5a9bb;
+}
+
+.back-top {
+    color: #e3c28e;
+}
+
+@keyframes cosmos-drift {
+    to { background-position: 290px 260px, -390px 330px, 350px -300px, -440px 390px, 320px -280px, -410px -350px }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    main::before { animation: none }
+}
+
 /* Cinematic opening */
 .site-header {
     color: #f7f0e8;
