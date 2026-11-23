@@ -30,23 +30,28 @@ export default function Home() {
 
       <main>
         <section className="hero" id="home">
-          <div className="hero-grain" aria-hidden="true" />
+          <div className="hero-stars" aria-hidden="true" />
           <div className="hero-copy" data-reveal>
-            <Eyebrow>A moment of clarity, just for you</Eyebrow>
-            <h1>Make space for<br /><em>what comes next.</em></h1>
-            <p className="hero-intro">Tarot readings with Archana Mahajan. Thoughtful, personal guidance to help you pause, reflect, and find your own way forward.</p>
-            <div className="hero-actions"><a className="button button-dark" href="#connect">Get in touch <span>↗</span></a><a className="text-link" href="#readings">Discover the readings <span>↓</span></a></div>
-            <div className="hero-note"><span className="note-star">✳</span><span>One question can open<br />a whole new perspective.</span></div>
+            <Eyebrow>A tarot reading with Archana Mahajan</Eyebrow>
+            <h1>Somewhere within,<br /><em>you already know.</em></h1>
+            <p className="hero-intro">Bring the question that’s been on your mind. A thoughtful tarot reading can help you see it from a new angle and find space for your own intuition.</p>
+            <div className="hero-actions"><a className="button button-dark" href="#connect">Start a conversation <span>↗</span></a><a className="text-link" href="#readings">Explore the readings <span>↓</span></a></div>
+            <div className="hero-note"><span className="note-star">✳</span><span>A quieter moment.<br />A clearer next step.</span></div>
           </div>
-          <div className="hero-art" aria-label="Animated tarot-inspired illustration">
-            <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
-            <div className="sun-disc"><span>✧</span></div>
-            <div className="tarot-card card-back"><div className="card-frame"><span className="card-top">✧</span><div className="card-moon">☾</div><span className="card-bottom">THE WAYFINDER</span></div></div>
-            <div className="tarot-card card-front"><div className="card-frame"><span className="card-top">✦</span><div className="card-sun">☼</div><span className="card-stem">♧</span><span className="card-bottom">A NEW BEGINNING</span></div></div>
-            <span className="art-spark spark-a">✦</span><span className="art-spark spark-b">✧</span><span className="art-spark spark-c">✳</span>
-            <div className="art-caption">TRUST THE TURNING</div>
+          <div className="hero-stage" aria-label="The Ultimate Path tarot reading poster">
+            <div className="stage-halo" />
+            <div className="stage-orbit stage-orbit-one" />
+            <div className="stage-orbit stage-orbit-two" />
+            <div className="stage-orbit stage-orbit-three" />
+            <div className="hero-photo-shell">
+              <Image className="hero-photo" src="/the-ultimate-path-poster.jpg" alt="The Ultimate Path tarot reading poster by Archana Mahajan" width={640} height={640} priority sizes="(max-width: 600px) 78vw, (max-width: 900px) 44vw, 38vw" />
+              <div className="photo-glint" aria-hidden="true" />
+            </div>
+            <div className="stage-note stage-note-top"><span>✦</span> PAUSE · REFLECT · SEE CLEARLY</div>
+            <div className="stage-badge"><span>✧</span><small>YOUR PATH<br />YOUR PACE</small></div>
+            <div className="stage-caption">ARCHANA MAHAJAN <i>·</i> TAROT READER</div>
           </div>
-          <div className="hero-bottom"><span>GORAKHNATH ROAD · GORAKHPUR</span><span>INTUITIVE TAROT · PERSONAL GUIDANCE</span></div>
+          <div className="hero-bottom"><span>GORAKHNATH ROAD · GORAKHPUR</span><span>PERSONAL TAROT READINGS · A SPACE TO REFLECT</span></div>
         </section>
 
         <section className="intro-section" id="about">

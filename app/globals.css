@@ -1322,3 +1322,483 @@ footer {
         transform: none
     }
 }
+
+/* Cinematic opening */
+.site-header {
+    color: #f7f0e8;
+    background: rgba(23, 18, 33, .94);
+    border-bottom-color: rgba(238, 218, 194, .12)
+}
+
+.site-header nav {
+    color: #d2c8d6
+}
+
+.site-header nav a:hover {
+    color: #e7c99c
+}
+
+.brand-name small {
+    color: #bcb0c0
+}
+
+.header-cta {
+    border-color: rgba(224, 194, 153, .65);
+    color: #f3e7d4
+}
+
+.header-cta:hover {
+    background: #ead0a6;
+    color: #201827
+}
+
+.hero {
+    min-height: 700px;
+    min-height: min(820px, calc(100svh - 88px));
+    grid-template-columns: 1.04fr .96fr;
+    gap: 22px;
+    color: #f7f0e8;
+    background:
+        radial-gradient(ellipse at 76% 48%, rgba(103, 62, 91, .23), transparent 42%),
+        linear-gradient(118deg, #171321 0%, #1d1728 55%, #241724 100%)
+}
+
+.hero:before {
+    width: 680px;
+    height: 680px;
+    right: -190px;
+    top: -120px;
+    background: radial-gradient(circle, rgba(169, 111, 126, .22), rgba(119, 80, 130, .09) 42%, transparent 70%)
+}
+
+.hero-stars {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .55;
+    background-image:
+        radial-gradient(1.5px 1.5px at 18% 22%, rgba(246, 222, 183, .8), transparent 60%),
+        radial-gradient(1px 1px at 63% 18%, rgba(235, 214, 222, .75), transparent 60%),
+        radial-gradient(2px 2px at 84% 73%, rgba(229, 193, 160, .75), transparent 60%),
+        radial-gradient(1px 1px at 47% 82%, rgba(237, 213, 221, .8), transparent 60%);
+    background-size: 430px 370px;
+    animation: star-drift 50s linear infinite
+}
+
+.hero-copy {
+    max-width: 640px;
+    padding: 20px 0 28px;
+    animation: hero-copy-rise .9s .08s both
+}
+
+.hero-copy .eyebrow {
+    color: #dfc6ae
+}
+
+.hero-copy .eyebrow-line {
+    background: #d4aa72
+}
+
+.hero h1 {
+    max-width: 700px;
+    color: #fff9f0;
+    font-size: clamp(54px, 6.2vw, 84px);
+    line-height: 1.02;
+    letter-spacing: -.06em;
+    margin: 26px 0 25px
+}
+
+.hero h1 em {
+    background: linear-gradient(105deg, #f4d8a8 8%, #e5b7ba 58%, #c5a9dd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.hero-intro {
+    max-width: 460px;
+    color: #c8bdcf;
+    font-size: 14px;
+    line-height: 1.95
+}
+
+.hero-actions {
+    gap: 25px;
+    margin-top: 30px
+}
+
+.hero-copy .button-dark {
+    background: #efd5a9;
+    color: #241b27;
+    box-shadow: 0 8px 32px rgba(226, 188, 134, .16)
+}
+
+.hero-copy .button-dark:hover {
+    background: #fff3d8;
+    box-shadow: 0 10px 40px rgba(226, 188, 134, .28)
+}
+
+.hero-copy .text-link {
+    color: #e2d5c5;
+    border-color: rgba(226, 213, 197, .5)
+}
+
+.hero-copy .text-link:hover {
+    color: #f1d8ad
+}
+
+.hero-note {
+    color: #c6b8c8;
+    margin-top: 48px
+}
+
+.hero-note .note-star {
+    color: #e8c890;
+    border-color: rgba(232, 200, 144, .6)
+}
+
+.hero-stage {
+    position: relative;
+    height: min(590px, calc(100svh - 145px));
+    min-height: 460px;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    animation: stage-arrive 1.1s .14s both
+}
+
+.stage-halo {
+    position: absolute;
+    z-index: -2;
+    width: min(90%, 510px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(203, 151, 159, .23), rgba(106, 71, 125, .13) 48%, transparent 72%);
+    filter: blur(4px);
+    animation: halo-breathe 7s ease-in-out infinite
+}
+
+.stage-orbit {
+    position: absolute;
+    z-index: -1;
+    border: 1px solid rgba(230, 197, 158, .28);
+    border-radius: 50%;
+    pointer-events: none
+}
+
+.stage-orbit-one {
+    width: min(91%, 470px);
+    aspect-ratio: 1.28;
+    transform: rotate(-29deg);
+    animation: orbit-turn 48s linear infinite
+}
+
+.stage-orbit-two {
+    width: min(74%, 385px);
+    aspect-ratio: .78;
+    border-color: rgba(211, 173, 210, .23);
+    transform: rotate(26deg);
+    animation: orbit-turn 62s linear infinite reverse
+}
+
+.stage-orbit-three {
+    width: min(100%, 525px);
+    aspect-ratio: 1.02;
+    border-style: dashed;
+    border-color: rgba(230, 197, 158, .17);
+    animation: orbit-turn 100s linear infinite
+}
+
+.hero-photo-shell {
+    position: relative;
+    z-index: 1;
+    width: min(84%, 440px);
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 1px solid rgba(241, 215, 182, .8);
+    border-radius: 47% 47% 12px 12px;
+    padding: 9px;
+    background: linear-gradient(145deg, rgba(242, 214, 177, .25), rgba(116, 77, 118, .18));
+    box-shadow: 0 28px 85px rgba(5, 4, 10, .42), 0 0 50px rgba(198, 141, 162, .15);
+    transform: rotate(2deg);
+    animation: poster-float 7s ease-in-out infinite
+}
+
+.hero-photo {
+    position: absolute;
+    inset: 9px;
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    border-radius: 46% 46% 7px 7px;
+    object-fit: cover;
+    object-position: center
+}
+
+.photo-glint {
+    position: absolute;
+    z-index: 2;
+    inset: -70% -50%;
+    pointer-events: none;
+    background: linear-gradient(112deg, transparent 42%, rgba(255, 242, 218, .16) 49%, transparent 56%);
+    transform: translateX(-65%);
+    animation: photo-glint 8s 1.2s ease-in-out infinite
+}
+
+.stage-note {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 13px;
+    color: #f0dfc8;
+    border: 1px solid rgba(239, 212, 177, .32);
+    border-radius: 30px;
+    background: rgba(34, 26, 43, .72);
+    box-shadow: 0 12px 32px rgba(7, 5, 12, .2);
+    backdrop-filter: blur(12px);
+    font-size: 8px;
+    letter-spacing: .15em
+}
+
+.stage-note-top {
+    top: 12%;
+    left: -2%;
+    animation: badge-float 5.6s ease-in-out infinite
+}
+
+.stage-note-top span {
+    color: #f0ce94;
+    font-size: 14px
+}
+
+.stage-badge {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 13%;
+    width: 104px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid rgba(240, 209, 169, .66);
+    border-radius: 50%;
+    color: #f5d8aa;
+    background: rgba(43, 30, 48, .82);
+    box-shadow: 0 14px 40px rgba(7, 5, 12, .3);
+    animation: badge-float 6.4s .5s ease-in-out infinite
+}
+
+.stage-badge span {
+    font-size: 23px;
+    line-height: 1
+}
+
+.stage-badge small {
+    color: #e6d5c9;
+    font-size: 7px;
+    line-height: 1.55;
+    letter-spacing: .15em;
+    text-align: center
+}
+
+.stage-caption {
+    position: absolute;
+    z-index: 2;
+    bottom: 4%;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+    color: #bcaec1;
+    font-size: 8px;
+    letter-spacing: .2em
+}
+
+.stage-caption i {
+    color: #e5c28f;
+    font-style: normal;
+    padding: 0 5px
+}
+
+.hero-bottom {
+    color: #a99caf;
+    border-top: 1px solid rgba(224, 202, 183, .16);
+    padding-top: 11px;
+    bottom: 18px;
+    font-size: 7px
+}
+
+@keyframes hero-copy-rise {
+    from { opacity: 0; transform: translateY(25px) }
+    to { opacity: 1; transform: translateY(0) }
+}
+
+@keyframes stage-arrive {
+    from { opacity: 0; transform: translateY(18px) scale(.97) }
+    to { opacity: 1; transform: translateY(0) scale(1) }
+}
+
+@keyframes poster-float {
+    0%, 100% { transform: rotate(2deg) translateY(0) }
+    50% { transform: rotate(-1deg) translateY(-10px) }
+}
+
+@keyframes halo-breathe {
+    0%, 100% { transform: scale(.94); opacity: .65 }
+    50% { transform: scale(1.06); opacity: 1 }
+}
+
+@keyframes orbit-turn {
+    to { rotate: 360deg }
+}
+
+@keyframes badge-float {
+    0%, 100% { translate: 0 0 }
+    50% { translate: 0 -9px }
+}
+
+@keyframes photo-glint {
+    0%, 18% { transform: translateX(-65%) }
+    60%, 100% { transform: translateX(65%) }
+}
+
+@keyframes star-drift {
+    to { background-position: 430px 185px }
+}
+
+@media(max-width:900px) {
+    .hero {
+        min-height: 680px;
+        grid-template-columns: 1fr .9fr;
+        gap: 6px
+    }
+
+    .hero h1 {
+        font-size: clamp(51px, 7vw, 68px)
+    }
+
+    .hero-stage {
+        height: 500px;
+        min-height: 430px
+    }
+
+    .stage-note-top {
+        left: -6%
+    }
+
+    .stage-badge {
+        right: -3%;
+        width: 88px;
+        height: 88px
+    }
+}
+
+@media(max-width:600px) {
+    .site-header {
+        background: rgba(23, 18, 33, .97)
+    }
+
+    .hero {
+        display: block;
+        min-height: 0;
+        padding: 58px var(--gutter) 73px;
+        text-align: center
+    }
+
+    .hero-copy {
+        padding: 0
+    }
+
+    .hero-copy .eyebrow {
+        justify-content: center;
+        font-size: 8px
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 11vw, 56px);
+        line-height: 1.04;
+        margin: 23px 0 19px
+    }
+
+    .hero-intro {
+        max-width: 390px;
+        margin: 0 auto;
+        font-size: 12px
+    }
+
+    .hero-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 24px
+    }
+
+    .hero-note {
+        justify-content: center;
+        margin-top: 25px
+    }
+
+    .hero-stage {
+        height: min(390px, 100vw);
+        min-height: 300px;
+        margin: 12px -4vw 0
+    }
+
+    .hero-photo-shell {
+        width: min(73vw, 330px)
+    }
+
+    .stage-note-top {
+        top: 9%;
+        left: 1%;
+        padding: 8px 10px;
+        font-size: 6px
+    }
+
+    .stage-badge {
+        right: 1%;
+        bottom: 9%;
+        width: 75px;
+        height: 75px
+    }
+
+    .stage-badge span {
+        font-size: 18px
+    }
+
+    .stage-badge small {
+        font-size: 6px
+    }
+
+    .stage-caption {
+        bottom: 0;
+        font-size: 6px
+    }
+
+    .hero-bottom {
+        left: var(--gutter);
+        right: var(--gutter);
+        bottom: 14px;
+        gap: 14px;
+        font-size: 5px;
+        letter-spacing: .1em
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .hero-stars,
+    .hero-copy,
+    .hero-stage,
+    .stage-halo,
+    .stage-orbit,
+    .hero-photo-shell,
+    .stage-note,
+    .stage-badge,
+    .photo-glint {
+        animation: none !important
+    }
+}
