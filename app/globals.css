@@ -2324,3 +2324,28 @@ footer {
 @media(prefers-reduced-motion:reduce) {
     .hero-photo-shell { animation: none; }
 }
+
+/* Keep decorative, absolutely placed elements out of the section grids. */
+main > section > :not(.hero-stars):not(.hero-bottom):not(.connect-orbit) {
+    position: relative;
+    z-index: 1;
+}
+
+main > section > .connect-orbit {
+    position: absolute;
+    z-index: 0;
+}
+
+main > section > .hero-bottom {
+    position: absolute;
+    z-index: 2;
+    left: var(--gutter);
+    right: var(--gutter);
+    bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect-section {
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) minmax(0, 1fr);
+}
