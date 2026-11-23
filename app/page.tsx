@@ -44,7 +44,7 @@ export default function Home() {
             <div className="stage-orbit stage-orbit-two" />
             <div className="stage-orbit stage-orbit-three" />
             <div className="hero-photo-shell">
-              <Image className="hero-photo" src="/the-ultimate-path-poster.jpg" alt="The Ultimate Path tarot reading poster by Archana Mahajan" width={640} height={640} priority sizes="(max-width: 600px) 78vw, (max-width: 900px) 44vw, 38vw" />
+              <Image className="hero-photo" src="/tarot-cards-reading.jpg" alt="A real tarot card spread featuring The Star and The World cards" width={1600} height={1600} priority sizes="(max-width: 600px) 78vw, (max-width: 900px) 44vw, 38vw" />
               <div className="photo-glint" aria-hidden="true" />
             </div>
             <div className="stage-note stage-note-top"><span>✦</span> PAUSE · REFLECT · SEE CLEARLY</div>
@@ -109,7 +109,13 @@ export default function Home() {
         </section>
       </main>
 
-      <footer><a className="brand footer-brand" href="#home"><Image className="brand-mark" src="/the-ultimate-path-poster.jpg" alt="" width={96} height={96} loading="lazy" /><span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span></a><span className="footer-note">A moment for your path forward.</span><a className="back-top" href="#home">BACK TO TOP ↑</a></footer>
+      <footer>
+        <a className="brand footer-brand" href="#home"><Image className="brand-mark" src="/the-ultimate-path-poster.jpg" alt="" width={96} height={96} loading="lazy" /><span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span></a>
+        <div className="footer-tarot-photo"><Image src="/tarot-cards-crystals.jpg" alt="A close-up photograph of tarot cards and crystals" width={2288} height={2290} sizes="120px" loading="lazy" /></div>
+        <span className="footer-note">A moment for your path forward.</span>
+        <div className="footer-credits"><a href="https://www.pexels.com/photo/tarot-cards-in-close-up-shot-14190147/" target="_blank" rel="noreferrer">Hero photo: Gabriela Hughes / Pexels</a><a href="https://www.pexels.com/photo/tarot-cards-and-crystals-14190187/" target="_blank" rel="noreferrer">Footer photo: Gabriela Hughes / Pexels</a></div>
+        <a className="back-top" href="#home">BACK TO TOP ↑</a>
+      </footer>
     </>
   );
 }
