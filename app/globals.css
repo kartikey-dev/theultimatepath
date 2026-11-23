@@ -2349,3 +2349,12 @@ main > section > .hero-bottom {
 .connect-section {
     grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) minmax(0, 1fr);
 }
+
+main > section,
+footer {
+    border-top: 0;
+}
+
+.reading-section {
+    box-shadow: none;
+}
