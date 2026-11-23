@@ -2358,3 +2358,24 @@ footer {
 .reading-section {
     box-shadow: none;
 }
+
+.footer-legal {
+    color: #b5a9bb;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+.footer-legal a {
+    color: #e3c28e;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media(max-width:600px) {
+    .footer-legal {
+        order: 5;
+        width: 100%;
+        text-align: center;
+        font-size: 8px;
+    }
+}

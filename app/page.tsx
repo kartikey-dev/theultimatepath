@@ -122,6 +122,7 @@ export default function Home() {
         <a className="brand footer-brand" href="#home"><Image className="brand-mark" src="/the-ultimate-path-poster.jpg" alt="" width={96} height={96} loading="lazy" /><span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span></a>
         <span className="footer-note">A moment for your path forward.</span>
         <div className="footer-credits"><a href="https://www.pexels.com/photo/tarot-cards-in-close-up-shot-14190147/" target="_blank" rel="noreferrer">Tarot photo: Gabriela Hughes / Pexels</a></div>
+        <span className="footer-legal">© 2026 The Ultimate Path · Designed and developed by <a href="https://navaroha.com" target="_blank" rel="noreferrer">Navaroha</a></span>
         <a className="back-top" href="#home">BACK TO TOP ↑</a>
       </footer>
     </>
