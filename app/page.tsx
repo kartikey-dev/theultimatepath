@@ -43,9 +43,15 @@ export default function Home() {
             <div className="stage-orbit stage-orbit-one" />
             <div className="stage-orbit stage-orbit-two" />
             <div className="stage-orbit stage-orbit-three" />
-            <div className="hero-photo-shell">
-              <Image className="hero-photo" src="/tarot-cards-reading.jpg" alt="A real tarot card spread featuring The Star and The World cards" width={1600} height={1600} priority sizes="(max-width: 600px) 78vw, (max-width: 900px) 44vw, 38vw" />
-              <div className="photo-glint" aria-hidden="true" />
+            <div className="tarot-card-stack" aria-label="Archana Mahajan with tarot cards">
+              <div className="tarot-stack-card tarot-stack-card-left" aria-hidden="true"><Image src="/tarot-cards-reading.jpg" alt="" width={1600} height={3500} sizes="(max-width: 600px) 40vw, 220px" /></div>
+              <div className="tarot-stack-card tarot-stack-card-right" aria-hidden="true"><Image src="/tarot-cards-crystals.jpg" alt="" width={1600} height={1600} sizes="(max-width: 600px) 40vw, 220px" /></div>
+              <div className="hero-photo-shell">
+                <span className="portrait-card-number">XVII <i>✦</i> THE STAR</span>
+                <Image className="hero-photo" src="/archana-mahajan.jpg" alt="Archana Mahajan offering a tarot reading" width={1200} height={1800} priority sizes="(max-width: 600px) 62vw, (max-width: 900px) 30vw, 25vw" />
+                <span className="portrait-card-caption">ARCHANA MAHAJAN</span>
+                <div className="photo-glint" aria-hidden="true" />
+              </div>
             </div>
             <div className="stage-note stage-note-top"><span>✦</span> PAUSE · REFLECT · SEE CLEARLY</div>
             <div className="stage-badge"><span>✧</span><small>YOUR PATH<br />YOUR PACE</small></div>
@@ -98,7 +104,10 @@ export default function Home() {
 
         <section className="connect-section" id="connect">
           <div className="connect-orbit" aria-hidden="true"><span>✳</span></div>
-          <div className="contact-poster" data-reveal><Image src="/the-ultimate-path-poster.jpg" alt="The Ultimate Path tarot reading poster featuring Archana Mahajan and her contact numbers" width={640} height={640} sizes="(max-width: 600px) 86vw, (max-width: 900px) 30vw, 25vw" /></div>
+          <div className="connect-visuals" data-reveal>
+            <div className="contact-poster"><Image src="/the-ultimate-path-poster.jpg" alt="The Ultimate Path tarot reading poster featuring Archana Mahajan and her contact numbers" width={640} height={640} sizes="(max-width: 600px) 86vw, (max-width: 900px) 30vw, 25vw" /></div>
+            <figure className="footer-tarot-photo"><Image src="/tarot-cards-crystals.jpg" alt="A close-up photograph of tarot cards and crystals" width={2288} height={2290} sizes="(max-width: 600px) 70vw, 20vw" loading="lazy" /><figcaption><a href="https://www.pexels.com/photo/tarot-cards-and-crystals-14190187/" target="_blank" rel="noreferrer">Photo: Gabriela Hughes / Pexels</a></figcaption></figure>
+          </div>
           <div className="connect-copy" data-reveal><Eyebrow>Your next step starts with a hello</Eyebrow><h2>Let’s find a time<br /><em>to talk.</em></h2><p>For tarot reading enquiries, connect with Archana on your preferred social platform.</p><div className="phone-links" aria-label="Call Archana"><a href="tel:+919076977905"><span>Call</span> +91 90769 77905 <b>↗</b></a><a href="tel:+918052623615"><span>Call</span> +91 80526 23615 <b>↗</b></a></div><a className="button button-light" href="https://jsdl.in/DT-99QRHHHBLIG" target="_blank" rel="noreferrer">View business listing <span>↗</span></a></div>
           <div className="social-links" data-reveal>
             <a href="https://www.instagram.com/the_ultimate_path/" target="_blank" rel="noreferrer"><span className="social-icon">◎</span><span><b>Instagram</b><small>@the_ultimate_path</small></span><span className="social-arrow">↗</span></a>
@@ -111,9 +120,8 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#home"><Image className="brand-mark" src="/the-ultimate-path-poster.jpg" alt="" width={96} height={96} loading="lazy" /><span className="brand-name">The Ultimate Path<small>Tarot readings · Gorakhpur</small></span></a>
-        <div className="footer-tarot-photo"><Image src="/tarot-cards-crystals.jpg" alt="A close-up photograph of tarot cards and crystals" width={2288} height={2290} sizes="120px" loading="lazy" /></div>
         <span className="footer-note">A moment for your path forward.</span>
-        <div className="footer-credits"><a href="https://www.pexels.com/photo/tarot-cards-in-close-up-shot-14190147/" target="_blank" rel="noreferrer">Hero photo: Gabriela Hughes / Pexels</a><a href="https://www.pexels.com/photo/tarot-cards-and-crystals-14190187/" target="_blank" rel="noreferrer">Footer photo: Gabriela Hughes / Pexels</a></div>
+        <div className="footer-credits"><a href="https://www.pexels.com/photo/tarot-cards-in-close-up-shot-14190147/" target="_blank" rel="noreferrer">Tarot photo: Gabriela Hughes / Pexels</a></div>
         <a className="back-top" href="#home">BACK TO TOP ↑</a>
       </footer>
     </>
