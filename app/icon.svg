@@ -1,17 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <defs>
-    <linearGradient id="card" x1="15" y1="8" x2="87" y2="95" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#32243e"/>
-      <stop offset="1" stop-color="#171321"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="23" y1="13" x2="76" y2="88" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#f4d9a6"/>
-      <stop offset="1" stop-color="#b78d5e"/>
-    </linearGradient>
-  </defs>
-  <rect x="11" y="6" width="78" height="88" rx="13" fill="url(#card)" stroke="url(#gold)" stroke-width="3"/>
-  <rect x="17" y="12" width="66" height="76" rx="9" stroke="url(#gold)" stroke-opacity=".55"/>
-  <path d="m50 23 5.4 15.6L71 44l-15.6 5.4L50 65l-5.4-15.6L29 44l15.6-5.4L50 23Z" fill="url(#gold)"/>
-  <circle cx="50" cy="44" r="5" fill="#2a2034"/>
-  <text x="50" y="81" fill="#f7eddb" font-family="Georgia,serif" font-size="15" text-anchor="middle" letter-spacing="1">T</text>
+  <rect x="12" y="6" width="76" height="88" rx="14" fill="#344A3A" stroke="#A7864D" stroke-width="3.5"/>
+  <rect x="20" y="14" width="60" height="72" rx="9" stroke="#FBF9F4" stroke-opacity="0.45" stroke-width="1.8"/>
+  <path
+    d="M50 72V31M50 55c-9.5-2-15-8.5-15-16.5 7.5.5 12.8 4.8 15 11.5M50 50c9.5-2 15-8.5 15-16.5-7.5.5-12.8 4.8-15 11.5"
+    stroke="#FBF9F4"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="50" cy="24" r="3.5" fill="#A7864D"/>
 </svg>
